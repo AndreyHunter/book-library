@@ -2,7 +2,7 @@ import React from 'react';
 
 import BookForm from '../components/bookForm/BookForm';
 import BookFilter from '../components/bookFilter/BookFilter';
-import BookList from '../components/bookForm/BookForm';
+import BookList from '../components/bookList/BookList';
 
 import './app.scss';
 

@@ -23,9 +23,8 @@ const bookSlice = createSlice({
 	reducers: {
 		addBook(state, action: PayloadAction<{ name: string; author: string }>) {
 			state.books.push({
+				...action.payload,
 				id: uuidv4(),
-				name: action.payload.name,
-				author: action.payload.author,
 			});
 		},
 		removeBook(state, action: PayloadAction<string>) {

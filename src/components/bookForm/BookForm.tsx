@@ -5,10 +5,16 @@ import './bookForm.scss';
 interface BookFormInt {
 	handleSubmit: (e: React.ChangeEvent<HTMLFormElement>) => void;
 	handleSetInput: (e: React.ChangeEvent<HTMLInputElement>) => void;
+	handleAddRandomBook: () => void;
 	formState: { name: string; author: string };
 }
 
-const BookForm: React.FC<BookFormInt> = ({ handleSubmit, handleSetInput, formState }) => {
+const BookForm: React.FC<BookFormInt> = ({
+	handleSubmit,
+	handleSetInput,
+	handleAddRandomBook,
+	formState,
+}) => {
 	return (
 		<div className="app-block book-form">
 			<h2>Add a new book</h2>
@@ -33,7 +39,10 @@ const BookForm: React.FC<BookFormInt> = ({ handleSubmit, handleSetInput, formSta
 						onChange={handleSetInput}
 					/>
 				</div>
-				<button>Add Book</button>
+				<button>Add book</button>
+				<button type="button" onClick={handleAddRandomBook}>
+					Add random book
+				</button>
 			</form>
 		</div>
 	);

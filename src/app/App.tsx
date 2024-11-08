@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BookForm from '../components/bookForm/BookForm';
+import BookForm from '../components/bookForm/BookFormContainer';
 import BookFilter from '../components/bookFilter/BookFilter';
 import BookList from '../components/bookList/BookList';
 

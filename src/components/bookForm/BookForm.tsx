@@ -1,44 +1,14 @@
-import React, { useState } from 'react';
-
-import { useAppDispatch } from '../../app/hooks';
-
-import { addBook } from '../../features/bookSlice/bookSlice';
+import React from 'react';
 
 import './bookForm.scss';
 
-const BookForm: React.FC = () => {
-	const dispatch = useAppDispatch();
-	const [formState, setFormState] = useState({
-		name: '',
-		author: '',
-	});
+interface BookFormInt {
+	handleSubmit: (e: React.ChangeEvent<HTMLFormElement>) => void;
+	handleSetInput: (e: React.ChangeEvent<HTMLInputElement>) => void;
+	formState: { name: string; author: string };
+}
 
-	const handleSetInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const { name, value } = e.target;
-		setFormState((prev) => ({
-			...prev,
-			[name]: value,
-		}));
-	};
-
-	const handleSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
-		e.preventDefault();
-
-		if (formState.name && formState.author) {
-			dispatch(
-				addBook({
-					name: formState.name,
-					author: formState.author,
-				}),
-			);
-		}
-
-		setFormState({
-			name: '',
-			author: '',
-		});
-	};
-
+const BookForm: React.FC<BookFormInt> = ({ handleSubmit, handleSetInput, formState }) => {
 	return (
 		<div className="app-block book-form">
 			<h2>Add a new book</h2>

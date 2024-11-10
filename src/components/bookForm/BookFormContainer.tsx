@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios';
-
 import { useAppDispatch } from '../../app/hooks';
-import { addBook } from '../../features/bookSlice/bookSlice';
+import { fetchAddBook, fetchGetRandomBook } from '../../features/bookSlice/bookSlice';
 
 import BookForm from './BookForm';
 
@@ -26,7 +24,7 @@ const BookFormContainer: React.FC = () => {
 
 		if (formState.name && formState.author) {
 			dispatch(
-				addBook({
+				fetchAddBook({
 					name: formState.name,
 					author: formState.author,
 				}),
@@ -39,20 +37,8 @@ const BookFormContainer: React.FC = () => {
 		}
 	};
 
-	const handleAddRandomBook = async () => {
-		try {
-			const res = await axios.get('http://localhost:3000/books');
-			const randomIndex = Math.floor(Math.random() * (res.data.length - 5));
-
-			const randomBook = res.data[randomIndex];
-			dispatch(addBook(randomBook));
-		} catch (err) {
-			if (err instanceof Error) {
-				console.log(err);
-			} else {
-				console.log('Unknown error:', err);
-			}
-		}
+	const handleAddRandomBook = () => {
+		dispatch(fetchGetRandomBook());
 	};
 
 	return (

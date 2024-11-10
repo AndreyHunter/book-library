@@ -1,455 +1,544 @@
 {
-	"books": [
-		{
-			"title": "Things Fall Apart",
-			"author": "Chinua Achebe",
-			"year": 1958
-		},
-		{
-			"title": "Fairy tales",
-			"author": "Hans Christian Andersen",
-			"year": 1836
-		},
-		{
-			"title": "The Divine Comedy",
-			"author": "Dante Alighieri",
-			"year": 1315
-		},
-		{
-			"title": "The Epic Of Gilgamesh",
-			"author": "Unknown",
-			"year": -1700
-		},
-		{
-			"title": "The Book Of Job",
-			"author": "Unknown",
-			"year": -600
-		},
-		{
-			"title": "One Thousand and One Nights",
-			"author": "Unknown",
-			"year": 1200
-		},
-		{
-			"title": "Njál's Saga",
-			"author": "Unknown",
-			"year": 1350
-		},
-		{
-			"title": "Pride and Prejudice",
-			"author": "Jane Austen",
-			"year": 1813
-		},
-		{
-			"title": "Le Père Goriot",
-			"author": "Honoré de Balzac",
-			"year": 1835
-		},
-		{
-			"title": "Molloy, Malone Dies, The Unnamable, the trilogy",
-			"author": "Samuel Beckett",
-			"year": 1952
-		},
-		{
-			"title": "The Decameron",
-			"author": "Giovanni Boccaccio",
-			"year": 1351
-		},
-		{
-			"title": "Ficciones",
-			"author": "Jorge Luis Borges",
-			"year": 1965
-		},
-		{
-			"title": "Wuthering Heights",
-			"author": "Emily Brontë",
-			"year": 1847
-		},
-		{
-			"title": "The Stranger",
-			"author": "Albert Camus",
-			"year": 1942
-		},
-		{
-			"title": "Poems",
-			"author": "Paul Celan",
-			"year": 1952
-		},
-		{
-			"title": "Journey to the End of the Night",
-			"author": "Louis-Ferdinand Céline",
-			"year": 1932
-		},
-		{
-			"title": "Don Quijote De La Mancha",
-			"author": "Miguel de Cervantes",
-			"year": 1610
-		},
-		{
-			"title": "The Canterbury Tales",
-			"author": "Geoffrey Chaucer",
-			"year": 1450
-		},
-
-		{
-			"title": "Nostromo",
-			"author": "Joseph Conrad",
-			"year": 1904
-		},
-		{
-			"title": "Great Expectations",
-			"author": "Charles Dickens",
-			"year": 1861
-		},
-		{
-			"title": "Jacques the Fatalist",
-			"author": "Denis Diderot",
-			"year": 1796
-		},
-		{
-			"title": "Berlin Alexanderplatz",
-			"author": "Alfred Döblin",
-			"year": 1929
-		},
-		{
-			"title": "Middlemarch",
-			"author": "George Eliot",
-			"year": 1871
-		},
-		{
-			"title": "Invisible Man",
-			"author": "Ralph Ellison",
-			"year": 1952
-		},
-		{
-			"title": "Medea",
-			"author": "Euripides",
-			"year": -431
-		},
-		{
-			"title": "Absalom, Absalom!",
-			"author": "William Faulkner",
-			"year": 1936
-		},
-		{
-			"title": "The Sound and the Fury",
-			"author": "William Faulkner",
-			"year": 1929
-		},
-		{
-			"title": "Madame Bovary",
-			"author": "Gustave Flaubert",
-			"year": 1857
-		},
-		{
-			"title": "Sentimental Education",
-			"author": "Gustave Flaubert",
-			"year": 1869
-		},
-		{
-			"title": "Gypsy Ballads",
-			"author": "Federico García Lorca",
-			"year": 1928
-		},
-		{
-			"title": "One Hundred Years of Solitude",
-			"author": "Gabriel García Márquez",
-			"year": 1967
-		},
-		{
-			"title": "Love in the Time of Cholera",
-			"author": "Gabriel García Márquez",
-			"year": 1985
-		},
-		{
-			"title": "Faust",
-			"author": "Johann Wolfgang von Goethe",
-			"year": 1832
-		},
-		{
-			"title": "The Tin Drum",
-			"author": "Günter Grass",
-			"year": 1959
-		},
-		{
-			"title": "The Devil to Pay in the Backlands",
-			"author": "João Guimarães Rosa",
-			"year": 1956
-		},
-		{
-			"title": "Hunger",
-			"author": "Knut Hamsun",
-			"year": 1890
-		},
-		{
-			"title": "The Old Man and the Sea",
-			"author": "Ernest Hemingway",
-			"year": 1952
-		},
-		{
-			"title": "Iliad",
-			"author": "Homer",
-			"year": -735
-		},
-		{
-			"title": "Odyssey",
-			"author": "Homer",
-			"year": -800
-		},
-		{
-			"title": "A Doll's House",
-			"author": "Henrik Ibsen",
-			"year": 1879
-		},
-		{
-			"title": "Ulysses",
-			"author": "James Joyce",
-			"year": 1922
-		},
-		{
-			"title": "Stories",
-			"author": "Franz Kafka",
-			"year": 1924
-		},
-		{
-			"title": "The Trial",
-			"author": "Franz Kafka",
-			"year": 1925
-		},
-		{
-			"title": "The Castle",
-			"author": "Franz Kafka",
-			"year": 1926
-		},
-		{
-			"title": "The recognition of Shakuntala",
-			"author": "Kālidāsa",
-			"year": 150
-		},
-		{
-			"title": "The Sound of the Mountain",
-			"author": "Yasunari Kawabata",
-			"year": 1954
-		},
-		{
-			"title": "Zorba the Greek",
-			"author": "Nikos Kazantzakis",
-			"year": 1946
-		},
-		{
-			"title": "Sons and Lovers",
-			"author": "D. H. Lawrence",
-			"year": 1913
-		},
-		{
-			"title": "Independent People",
-			"author": "Halldór Laxness",
-			"year": 1934
-		},
-		{
-			"title": "Poems",
-			"author": "Giacomo Leopardi",
-			"year": 1818
-		},
-		{
-			"title": "The Golden Notebook",
-			"author": "Doris Lessing",
-			"year": 1962
-		},
-		{
-			"title": "Pippi Longstocking",
-			"author": "Astrid Lindgren",
-			"year": 1945
-		},
-		{
-			"title": "Diary of a Madman",
-			"author": "Lu Xun",
-			"year": 1918
-		},
-		{
-			"title": "Children of Gebelawi",
-			"author": "Naguib Mahfouz",
-			"year": 1959
-		},
-		{
-			"title": "Buddenbrooks",
-			"author": "Thomas Mann",
-			"year": 1901
-		},
-		{
-			"title": "The Magic Mountain",
-			"author": "Thomas Mann",
-			"year": 1924
-		},
-		{
-			"title": "Moby Dick",
-			"author": "Herman Melville",
-			"year": 1851
-		},
-		{
-			"title": "Essays",
-			"author": "Michel de Montaigne",
-			"year": 1595
-		},
-		{
-			"title": "History",
-			"author": "Elsa Morante",
-			"year": 1974
-		},
-		{
-			"title": "Beloved",
-			"author": "Toni Morrison",
-			"year": 1987
-		},
-		{
-			"title": "The Tale of Genji",
-			"author": "Murasaki Shikibu",
-			"year": 1006
-		},
-		{
-			"title": "The Man Without Qualities",
-			"author": "Robert Musil",
-			"year": 1931
-		},
-		{
-			"title": "Nineteen Eighty-Four",
-			"author": "George Orwell",
-			"year": 1949
-		},
-		{
-			"title": "Metamorphoses",
-			"author": "Ovid",
-			"year": 100
-		},
-		{
-			"title": "The Book of Disquiet",
-			"author": "Fernando Pessoa",
-			"year": 1928
-		},
-		{
-			"title": "Tales",
-			"author": "Edgar Allan Poe",
-			"year": 1950
-		},
-		{
-			"title": "In Search of Lost Time",
-			"author": "Marcel Proust",
-			"year": 1920
-		},
-		{
-			"title": "Gargantua and Pantagruel",
-			"author": "François Rabelais",
-			"year": 1533
-		},
-		{
-			"title": "Pedro Páramo",
-			"author": "Juan Rulfo",
-			"year": 1955
-		},
-		{
-			"title": "The Masnavi",
-			"author": "Rumi",
-			"year": 1236
-		},
-		{
-			"title": "Midnight's Children",
-			"author": "Salman Rushdie",
-			"year": 1981
-		},
-		{
-			"title": "Bostan",
-			"author": "Saadi",
-			"year": 1257
-		},
-		{
-			"title": "Season of Migration to the North",
-			"author": "Tayeb Salih",
-			"year": 1966
-		},
-		{
-			"title": "Blindness",
-			"author": "José Saramago",
-			"year": 1995
-		},
-		{
-			"title": "Hamlet",
-			"author": "William Shakespeare",
-			"year": 1603
-		},
-		{
-			"title": "King Lear",
-			"author": "William Shakespeare",
-			"year": 1608
-		},
-		{
-			"title": "Othello",
-			"author": "William Shakespeare",
-			"year": 1609
-		},
-		{
-			"title": "Oedipus the King",
-			"author": "Sophocles",
-			"year": -430
-		},
-		{
-			"title": "The Red and the Black",
-			"author": "Stendhal",
-			"year": 1830
-		},
-		{
-			"title": "The Life And Opinions of Tristram Shandy",
-			"author": "Laurence Sterne",
-			"year": 1760
-		},
-		{
-			"title": "Confessions of Zeno",
-			"author": "Italo Svevo",
-			"year": 1923
-		},
-		{
-			"title": "Gulliver's Travels",
-			"author": "Jonathan Swift",
-			"year": 1726
-		},
-		{
-			"title": "The Adventures of Huckleberry Finn",
-			"author": "Mark Twain",
-			"year": 1884
-		},
-		{
-			"title": "Ramayana",
-			"author": "Valmiki",
-			"year": -450
-		},
-		{
-			"title": "The Aeneid",
-			"author": "Virgil",
-			"year": -23
-		},
-		{
-			"title": "Mahabharata",
-			"author": "Vyasa",
-			"year": -700
-		},
-		{
-			"title": "Leaves of Grass",
-			"author": "Walt Whitman",
-			"year": 1855
-		},
-		{
-			"title": "Mrs Dalloway",
-			"author": "Virginia Woolf",
-			"year": 1925
-		},
-		{
-			"title": "To the Lighthouse",
-			"author": "Virginia Woolf",
-			"year": 1927
-		},
-		{
-			"title": "Memoirs of Hadrian",
-			"author": "Marguerite Yourcenar",
-			"year": 1951
-		}
-	]
+  "books": [],
+  "randomBooks": [
+    {
+      "title": "Things Fall Apart",
+      "author": "Chinua Achebe",
+      "year": 1958,
+      "id": "b6c7"
+    },
+    {
+      "title": "Fairy tales",
+      "author": "Hans Christian Andersen",
+      "year": 1836,
+      "id": "f9e4"
+    },
+    {
+      "title": "The Divine Comedy",
+      "author": "Dante Alighieri",
+      "year": 1315,
+      "id": "2592"
+    },
+    {
+      "title": "The Epic Of Gilgamesh",
+      "author": "Unknown",
+      "id": "8cc4"
+    },
+    {
+      "title": "The Book Of Job",
+      "author": "Unknown",
+      "year": -600,
+      "id": "8bf5"
+    },
+    {
+      "title": "One Thousand and One Nights",
+      "author": "Unknown",
+      "year": 1200,
+      "id": "d3d3"
+    },
+    {
+      "title": "Njál's Saga",
+      "author": "Unknown",
+      "year": 1350,
+      "id": "64a7"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "year": 1813,
+      "id": "dbae"
+    },
+    {
+      "title": "Le Père Goriot",
+      "author": "Honoré de Balzac",
+      "year": 1835,
+      "id": "8fb7"
+    },
+    {
+      "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+      "author": "Samuel Beckett",
+      "year": 1952,
+      "id": "d3cc"
+    },
+    {
+      "title": "The Decameron",
+      "author": "Giovanni Boccaccio",
+      "year": 1351,
+      "id": "9b6b"
+    },
+    {
+      "title": "Ficciones",
+      "author": "Jorge Luis Borges",
+      "year": 1965,
+      "id": "b3e4"
+    },
+    {
+      "title": "Wuthering Heights",
+      "author": "Emily Brontë",
+      "year": 1847,
+      "id": "2d79"
+    },
+    {
+      "title": "The Stranger",
+      "author": "Albert Camus",
+      "year": 1942,
+      "id": "e0d2"
+    },
+    {
+      "title": "Poems",
+      "author": "Paul Celan",
+      "year": 1952,
+      "id": "144a"
+    },
+    {
+      "title": "Journey to the End of the Night",
+      "author": "Louis-Ferdinand Céline",
+      "year": 1932,
+      "id": "a62c"
+    },
+    {
+      "title": "Don Quijote De La Mancha",
+      "author": "Miguel de Cervantes",
+      "year": 1610,
+      "id": "f7d8"
+    },
+    {
+      "title": "The Canterbury Tales",
+      "author": "Geoffrey Chaucer",
+      "year": 1450,
+      "id": "e974"
+    },
+    {
+      "title": "Nostromo",
+      "author": "Joseph Conrad",
+      "year": 1904,
+      "id": "0ac8"
+    },
+    {
+      "title": "Great Expectations",
+      "author": "Charles Dickens",
+      "year": 1861,
+      "id": "fbe2"
+    },
+    {
+      "title": "Jacques the Fatalist",
+      "author": "Denis Diderot",
+      "year": 1796,
+      "id": "b301"
+    },
+    {
+      "title": "Berlin Alexanderplatz",
+      "author": "Alfred Döblin",
+      "year": 1929,
+      "id": "6d21"
+    },
+    {
+      "title": "Middlemarch",
+      "author": "George Eliot",
+      "year": 1871,
+      "id": "71f8"
+    },
+    {
+      "title": "Invisible Man",
+      "author": "Ralph Ellison",
+      "year": 1952,
+      "id": "03a8"
+    },
+    {
+      "title": "Medea",
+      "author": "Euripides",
+      "year": -431,
+      "id": "8f09"
+    },
+    {
+      "title": "Absalom, Absalom!",
+      "author": "William Faulkner",
+      "year": 1936,
+      "id": "2005"
+    },
+    {
+      "title": "The Sound and the Fury",
+      "author": "William Faulkner",
+      "year": 1929,
+      "id": "4b33"
+    },
+    {
+      "title": "Madame Bovary",
+      "author": "Gustave Flaubert",
+      "year": 1857,
+      "id": "080a"
+    },
+    {
+      "title": "Sentimental Education",
+      "author": "Gustave Flaubert",
+      "year": 1869,
+      "id": "9d99"
+    },
+    {
+      "title": "Gypsy Ballads",
+      "author": "Federico García Lorca",
+      "year": 1928,
+      "id": "28de"
+    },
+    {
+      "title": "One Hundred Years of Solitude",
+      "author": "Gabriel García Márquez",
+      "year": 1967,
+      "id": "a3c8"
+    },
+    {
+      "title": "Love in the Time of Cholera",
+      "author": "Gabriel García Márquez",
+      "year": 1985,
+      "id": "2baa"
+    },
+    {
+      "title": "Faust",
+      "author": "Johann Wolfgang von Goethe",
+      "year": 1832,
+      "id": "761e"
+    },
+    {
+      "title": "The Tin Drum",
+      "author": "Günter Grass",
+      "year": 1959,
+      "id": "5591"
+    },
+    {
+      "title": "The Devil to Pay in the Backlands",
+      "author": "João Guimarães Rosa",
+      "year": 1956,
+      "id": "b69b"
+    },
+    {
+      "title": "Hunger",
+      "author": "Knut Hamsun",
+      "year": 1890,
+      "id": "c418"
+    },
+    {
+      "title": "The Old Man and the Sea",
+      "author": "Ernest Hemingway",
+      "year": 1952,
+      "id": "c7c4"
+    },
+    {
+      "title": "Iliad",
+      "author": "Homer",
+      "year": -735,
+      "id": "cf7a"
+    },
+    {
+      "title": "Odyssey",
+      "author": "Homer",
+      "year": -800,
+      "id": "ea43"
+    },
+    {
+      "title": "A Doll's House",
+      "author": "Henrik Ibsen",
+      "year": 1879,
+      "id": "b3f8"
+    },
+    {
+      "title": "Ulysses",
+      "author": "James Joyce",
+      "year": 1922,
+      "id": "654c"
+    },
+    {
+      "title": "Stories",
+      "author": "Franz Kafka",
+      "year": 1924,
+      "id": "0921"
+    },
+    {
+      "title": "The Trial",
+      "author": "Franz Kafka",
+      "year": 1925,
+      "id": "5ab4"
+    },
+    {
+      "title": "The Castle",
+      "author": "Franz Kafka",
+      "year": 1926,
+      "id": "876e"
+    },
+    {
+      "title": "The recognition of Shakuntala",
+      "author": "Kālidāsa",
+      "year": 150,
+      "id": "95b1"
+    },
+    {
+      "title": "The Sound of the Mountain",
+      "author": "Yasunari Kawabata",
+      "year": 1954,
+      "id": "4c50"
+    },
+    {
+      "title": "Zorba the Greek",
+      "author": "Nikos Kazantzakis",
+      "year": 1946,
+      "id": "eeb8"
+    },
+    {
+      "title": "Sons and Lovers",
+      "author": "D. H. Lawrence",
+      "year": 1913,
+      "id": "8c54"
+    },
+    {
+      "title": "Independent People",
+      "author": "Halldór Laxness",
+      "year": 1934,
+      "id": "30c3"
+    },
+    {
+      "title": "Poems",
+      "author": "Giacomo Leopardi",
+      "year": 1818,
+      "id": "5caa"
+    },
+    {
+      "title": "The Golden Notebook",
+      "author": "Doris Lessing",
+      "year": 1962,
+      "id": "4d3a"
+    },
+    {
+      "title": "Pippi Longstocking",
+      "author": "Astrid Lindgren",
+      "year": 1945,
+      "id": "f5d8"
+    },
+    {
+      "title": "Diary of a Madman",
+      "author": "Lu Xun",
+      "year": 1918,
+      "id": "4c62"
+    },
+    {
+      "title": "Children of Gebelawi",
+      "author": "Naguib Mahfouz",
+      "year": 1959,
+      "id": "c17b"
+    },
+    {
+      "title": "Buddenbrooks",
+      "author": "Thomas Mann",
+      "year": 1901,
+      "id": "3bc8"
+    },
+    {
+      "title": "The Magic Mountain",
+      "author": "Thomas Mann",
+      "year": 1924,
+      "id": "e17d"
+    },
+    {
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "year": 1851,
+      "id": "b2e1"
+    },
+    {
+      "title": "Essays",
+      "author": "Michel de Montaigne",
+      "year": 1595,
+      "id": "4e7c"
+    },
+    {
+      "title": "History",
+      "author": "Elsa Morante",
+      "year": 1974,
+      "id": "4412"
+    },
+    {
+      "title": "Beloved",
+      "author": "Toni Morrison",
+      "year": 1987,
+      "id": "6152"
+    },
+    {
+      "title": "The Tale of Genji",
+      "author": "Murasaki Shikibu",
+      "year": 1006,
+      "id": "94c2"
+    },
+    {
+      "title": "The Man Without Qualities",
+      "author": "Robert Musil",
+      "year": 1931,
+      "id": "8850"
+    },
+    {
+      "title": "Nineteen Eighty-Four",
+      "author": "George Orwell",
+      "year": 1949,
+      "id": "916c"
+    },
+    {
+      "title": "Metamorphoses",
+      "author": "Ovid",
+      "year": 100,
+      "id": "911b"
+    },
+    {
+      "title": "The Book of Disquiet",
+      "author": "Fernando Pessoa",
+      "year": 1928,
+      "id": "67e3"
+    },
+    {
+      "title": "Tales",
+      "author": "Edgar Allan Poe",
+      "year": 1950,
+      "id": "12b5"
+    },
+    {
+      "title": "In Search of Lost Time",
+      "author": "Marcel Proust",
+      "year": 1920,
+      "id": "fa9b"
+    },
+    {
+      "title": "Gargantua and Pantagruel",
+      "author": "François Rabelais",
+      "year": 1533,
+      "id": "1998"
+    },
+    {
+      "title": "Pedro Páramo",
+      "author": "Juan Rulfo",
+      "year": 1955,
+      "id": "c3bc"
+    },
+    {
+      "title": "The Masnavi",
+      "author": "Rumi",
+      "year": 1236,
+      "id": "8f6e"
+    },
+    {
+      "title": "Midnight's Children",
+      "author": "Salman Rushdie",
+      "year": 1981,
+      "id": "409a"
+    },
+    {
+      "title": "Bostan",
+      "author": "Saadi",
+      "year": 1257,
+      "id": "f5a1"
+    },
+    {
+      "title": "Season of Migration to the North",
+      "author": "Tayeb Salih",
+      "year": 1966,
+      "id": "5d46"
+    },
+    {
+      "title": "Blindness",
+      "author": "José Saramago",
+      "year": 1995,
+      "id": "972a"
+    },
+    {
+      "title": "Hamlet",
+      "author": "William Shakespeare",
+      "year": 1603,
+      "id": "60c2"
+    },
+    {
+      "title": "King Lear",
+      "author": "William Shakespeare",
+      "year": 1608,
+      "id": "87d5"
+    },
+    {
+      "title": "Othello",
+      "author": "William Shakespeare",
+      "year": 1609,
+      "id": "8b60"
+    },
+    {
+      "title": "Oedipus the King",
+      "author": "Sophocles",
+      "year": -430,
+      "id": "1766"
+    },
+    {
+      "title": "The Red and the Black",
+      "author": "Stendhal",
+      "year": 1830,
+      "id": "179d"
+    },
+    {
+      "title": "The Life And Opinions of Tristram Shandy",
+      "author": "Laurence Sterne",
+      "year": 1760,
+      "id": "eaa9"
+    },
+    {
+      "title": "Confessions of Zeno",
+      "author": "Italo Svevo",
+      "year": 1923,
+      "id": "6433"
+    },
+    {
+      "title": "Gulliver's Travels",
+      "author": "Jonathan Swift",
+      "year": 1726,
+      "id": "87c7"
+    },
+    {
+      "title": "The Adventures of Huckleberry Finn",
+      "author": "Mark Twain",
+      "year": 1884,
+      "id": "1636"
+    },
+    {
+      "title": "Ramayana",
+      "author": "Valmiki",
+      "year": -450,
+      "id": "11a5"
+    },
+    {
+      "title": "The Aeneid",
+      "author": "Virgil",
+      "year": -23,
+      "id": "cf59"
+    },
+    {
+      "title": "Mahabharata",
+      "author": "Vyasa",
+      "year": -700,
+      "id": "5d2b"
+    },
+    {
+      "title": "Leaves of Grass",
+      "author": "Walt Whitman",
+      "year": 1855,
+      "id": "488a"
+    },
+    {
+      "title": "Mrs Dalloway",
+      "author": "Virginia Woolf",
+      "year": 1925,
+      "id": "8eef"
+    },
+    {
+      "title": "To the Lighthouse",
+      "author": "Virginia Woolf",
+      "year": 1927,
+      "id": "5912"
+    },
+    {
+      "title": "Memoirs of Hadrian",
+      "author": "Marguerite Yourcenar",
+      "year": 1951,
+      "id": "a066"
+    }
+  ]
 }

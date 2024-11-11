@@ -15,6 +15,7 @@ import './bookList.scss';
 const BookList: React.FC = () => {
 	const dispatch = useAppDispatch();
 	const books = useAppSelector(getBooks);
+	const name = useAppSelector((state) => state.book.filters.name);
 
 	useEffect(() => {
 		dispatch(fetchBooks());
@@ -28,16 +29,21 @@ const BookList: React.FC = () => {
 		dispatch(fetchAddToFavorite(id));
 	};
 
+	const filteredBooks = books.filter((book) =>
+		`${book.name || book.title}`.toLowerCase().includes(name.toLowerCase()),
+	);
+
 	return (
 		<div className="app-block book-list">
 			<h2>Book List</h2>
-			{books.length ? (
+			{filteredBooks.length ? (
 				<ul>
-					{books.map((book) => {
+					{filteredBooks.map((book, index) => {
 						return (
 							<li key={book.id}>
 								<div className="book-info">
-									{book.name} by <strong>{book.author}</strong>
+									{++index}. {book.name || book.title} by{' '}
+									<strong>{book.author}</strong>
 								</div>
 								<div className="book-actions">
 									<BookMark

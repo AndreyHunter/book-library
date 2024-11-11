@@ -1,6 +1,7 @@
 export interface BookInt {
 	id: string;
 	name: string;
+	title: string;
 	author: string;
 	favorite: boolean;
 }

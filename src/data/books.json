@@ -1,5 +1,34 @@
 {
-  "books": [],
+  "books": [
+    {
+      "id": "dbae",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "year": 1813,
+      "favorite": false
+    },
+    {
+      "id": "9b6b",
+      "title": "The Decameron",
+      "author": "Giovanni Boccaccio",
+      "year": 1351,
+      "favorite": false
+    },
+    {
+      "id": "4c62",
+      "title": "Diary of a Madman",
+      "author": "Lu Xun",
+      "year": 1918,
+      "favorite": false
+    },
+    {
+      "id": "e974",
+      "title": "The Canterbury Tales",
+      "author": "Geoffrey Chaucer",
+      "year": 1450,
+      "favorite": false
+    }
+  ],
   "randomBooks": [
     {
       "title": "Things Fall Apart",

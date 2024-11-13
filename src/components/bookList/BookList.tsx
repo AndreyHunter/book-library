@@ -8,6 +8,8 @@ import {
 	fetchRemoveBook,
 } from '../../features/bookSlice/bookSlice';
 
+import { getNameFilter, getAuthorFilter } from '../../features/bookFilterSlice/bookFilterSlice';
+
 import BookMark from '../../components/bookMark/BookMark';
 
 import './bookList.scss';
@@ -15,7 +17,8 @@ import './bookList.scss';
 const BookList: React.FC = () => {
 	const dispatch = useAppDispatch();
 	const books = useAppSelector(getBooks);
-	const name = useAppSelector((state) => state.book.filters.name);
+	const name = useAppSelector(getNameFilter);
+	const author = useAppSelector(getAuthorFilter);
 
 	useEffect(() => {
 		dispatch(fetchBooks());
@@ -29,9 +32,11 @@ const BookList: React.FC = () => {
 		dispatch(fetchAddToFavorite(id));
 	};
 
-	const filteredBooks = books.filter((book) =>
-		`${book.name || book.title}`.toLowerCase().includes(name.toLowerCase()),
-	);
+	const filteredBooks = books.filter((book) => {
+		const booksByName = `${book.title || book.name}`.toLowerCase().includes(name.toLowerCase());
+		const booksByAuthor = `${book.author}`.toLowerCase().includes(author.toLowerCase());
+		return booksByName && booksByAuthor;
+	});
 
 	return (
 		<div className="app-block book-list">

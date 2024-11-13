@@ -1,31 +1,59 @@
 {
   "books": [
     {
-      "id": "dbae",
-      "title": "Pride and Prejudice",
-      "author": "Jane Austen",
-      "year": 1813,
+      "id": "5ab4",
+      "title": "The Trial",
+      "author": "Franz Kafka",
+      "year": 1925,
+      "favorite": true
+    },
+    {
+      "id": "8fb7",
+      "title": "Le Père Goriot",
+      "author": "Honoré de Balzac",
+      "year": 1835,
+      "favorite": true
+    },
+    {
+      "id": "e17d",
+      "title": "The Magic Mountain",
+      "author": "Thomas Mann",
+      "year": 1924,
       "favorite": false
     },
     {
-      "id": "9b6b",
-      "title": "The Decameron",
-      "author": "Giovanni Boccaccio",
-      "year": 1351,
+      "id": "b3e4",
+      "title": "Ficciones",
+      "author": "Jorge Luis Borges",
+      "year": 1965,
       "favorite": false
     },
     {
-      "id": "4c62",
-      "title": "Diary of a Madman",
-      "author": "Lu Xun",
-      "year": 1918,
+      "id": "67e3",
+      "title": "The Book of Disquiet",
+      "author": "Fernando Pessoa",
+      "year": 1928,
       "favorite": false
     },
     {
-      "id": "e974",
-      "title": "The Canterbury Tales",
-      "author": "Geoffrey Chaucer",
-      "year": 1450,
+      "id": "916c",
+      "title": "Nineteen Eighty-Four",
+      "author": "George Orwell",
+      "year": 1949,
+      "favorite": false
+    },
+    {
+      "id": "9d99",
+      "title": "Sentimental Education",
+      "author": "Gustave Flaubert",
+      "year": 1869,
+      "favorite": false
+    },
+    {
+      "id": "71f8",
+      "title": "Middlemarch",
+      "author": "George Eliot",
+      "year": 1871,
       "favorite": false
     }
   ],

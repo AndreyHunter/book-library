@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
 
@@ -116,28 +116,18 @@ interface initialStateInt {
 	books: BookInt[];
 	loading: boolean;
 	error: string | null | undefined;
-	filters: {
-		name: string;
-	};
 }
 
 const initialState: initialStateInt = {
 	books: [],
 	loading: false,
 	error: null,
-	filters: {
-		name: '',
-	},
 };
 
 const bookSlice = createSlice({
 	name: 'book',
 	initialState,
-	reducers: {
-		setFilterName: (state, action: PayloadAction<string>) => {
-			state.filters.name = action.payload;
-		},
-	},
+	reducers: {},
 	extraReducers: (builder) => {
 		builder
 			// ADD BOOK
@@ -194,5 +184,4 @@ const bookSlice = createSlice({
 
 export const getBooks = (state: TypeRootState) => state.book.books;
 
-export const { setFilterName } = bookSlice.actions;
 export default bookSlice.reducer;

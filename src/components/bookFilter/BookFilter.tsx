@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 
 import debounce from '../../utils/debounce';
-import { useAppDispatch } from '../../app/hooks';
+import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import {
 	setFilterName,
 	setFilterAuthor,
+	setfilterFavorite,
 	resetFilters,
+	selectFavoriteFilter,
 } from '../../features/bookFilterSlice/bookFilterSlice';
 
 import './bookFilter.scss';
@@ -14,6 +16,7 @@ const BookFilter: React.FC = () => {
 	const dispatch = useAppDispatch();
 	const [nameValue, setNameValue] = useState('');
 	const [authorValue, setAuthorValue] = useState('');
+	const isFavorite = useAppSelector(selectFavoriteFilter);
 
 	const debounceSetName = debounce((value: string) => {
 		dispatch(setFilterName(value));
@@ -31,6 +34,10 @@ const BookFilter: React.FC = () => {
 	const handleSetAuthor = (e: React.ChangeEvent<HTMLInputElement>) => {
 		setAuthorValue(e.target.value);
 		debounceSetAuthor(e.target.value);
+	};
+
+	const handleSetFavorite = () => {
+		dispatch(setfilterFavorite());
 	};
 
 	const handleResetFilters = () => {
@@ -57,6 +64,12 @@ const BookFilter: React.FC = () => {
 						value={authorValue}
 						onChange={handleSetAuthor}
 					/>
+				</div>
+				<div className="filter-group">
+					<label>
+						<input type="checkbox" checked={isFavorite} onChange={handleSetFavorite} />
+						Only favorite
+					</label>
 				</div>
 				<button onClick={handleResetFilters}>Reset filters</button>
 			</div>

@@ -4,11 +4,13 @@ import { TypeRootState } from '../../app/store';
 interface initialStateInt {
 	name: string;
 	author: string;
+	favorite: boolean;
 }
 
 const initialState: initialStateInt = {
 	name: '',
 	author: '',
+	favorite: false,
 };
 
 const bookFilterSlice = createSlice({
@@ -21,14 +23,19 @@ const bookFilterSlice = createSlice({
 		setFilterAuthor: (state, action: PayloadAction<string>) => {
 			state.author = action.payload;
 		},
+		setfilterFavorite: (state) => {
+			state.favorite = !state.favorite;
+		},
 		resetFilters: () => {
 			return initialState;
 		},
 	},
 });
 
-export const getNameFilter = (state: TypeRootState) => state.bookFilters.name;
-export const getAuthorFilter = (state: TypeRootState) => state.bookFilters.author;
-
-export const { setFilterName, resetFilters, setFilterAuthor } = bookFilterSlice.actions;
+export const { setFilterName, setFilterAuthor, setfilterFavorite, resetFilters } =
+	bookFilterSlice.actions;
 export default bookFilterSlice.reducer;
+
+export const selectNameFilter = (state: TypeRootState) => state.bookFilters.name;
+export const selectAuthorFilter = (state: TypeRootState) => state.bookFilters.author;
+export const selectFavoriteFilter = (state: TypeRootState) => state.bookFilters.favorite;

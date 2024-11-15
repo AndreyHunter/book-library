@@ -182,6 +182,6 @@ const bookSlice = createSlice({
 	},
 });
 
-export const getBooks = (state: TypeRootState) => state.book.books;
+export const selectBooks = (state: TypeRootState) => state.book.books;
 
 export default bookSlice.reducer;

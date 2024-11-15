@@ -2,13 +2,19 @@ import React, { useEffect } from 'react';
 
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import {
-	getBooks,
 	fetchBooks,
 	fetchAddToFavorite,
 	fetchRemoveBook,
+	selectBooks,
 } from '../../features/bookSlice/bookSlice';
 
-import { getNameFilter, getAuthorFilter } from '../../features/bookFilterSlice/bookFilterSlice';
+import {
+	selectAuthorFilter,
+	selectFavoriteFilter,
+	selectNameFilter,
+} from '../../features/bookFilterSlice/bookFilterSlice';
+
+import highlightString from '../../utils/highlightStringString';
 
 import BookMark from '../../components/bookMark/BookMark';
 
@@ -16,9 +22,10 @@ import './bookList.scss';
 
 const BookList: React.FC = () => {
 	const dispatch = useAppDispatch();
-	const books = useAppSelector(getBooks);
-	const name = useAppSelector(getNameFilter);
-	const author = useAppSelector(getAuthorFilter);
+	const books = useAppSelector(selectBooks);
+	const nameFilter = useAppSelector(selectNameFilter);
+	const authorFilter = useAppSelector(selectAuthorFilter);
+	const favoriteFilter = useAppSelector(selectFavoriteFilter);
 
 	useEffect(() => {
 		dispatch(fetchBooks());
@@ -33,9 +40,13 @@ const BookList: React.FC = () => {
 	};
 
 	const filteredBooks = books.filter((book) => {
-		const booksByName = `${book.title || book.name}`.toLowerCase().includes(name.toLowerCase());
-		const booksByAuthor = `${book.author}`.toLowerCase().includes(author.toLowerCase());
-		return booksByName && booksByAuthor;
+		const matchByName = `${book.name || book.title}`
+			.toLowerCase()
+			.includes(nameFilter.toLowerCase());
+		const matchByAuthor = book.author.toLowerCase().includes(authorFilter.toLowerCase());
+		const matchByFavorite = favoriteFilter ? book.favorite : true;
+
+		return matchByName && matchByAuthor && matchByFavorite;
 	});
 
 	return (
@@ -47,8 +58,18 @@ const BookList: React.FC = () => {
 						return (
 							<li key={book.id}>
 								<div className="book-info">
-									{++index}. {book.name || book.title} by{' '}
-									<strong>{book.author}</strong>
+									{++index}.{' '}
+									{highlightString({
+										text: `${book.name || book.title}`,
+										filter: nameFilter,
+									})}{' '}
+									by{' '}
+									<strong>
+										{highlightString({
+											text: book.author,
+											filter: authorFilter,
+										})}
+									</strong>
 								</div>
 								<div className="book-actions">
 									<BookMark

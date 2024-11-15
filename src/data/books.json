@@ -1,59 +1,38 @@
 {
   "books": [
     {
-      "id": "5ab4",
-      "title": "The Trial",
-      "author": "Franz Kafka",
-      "year": 1925,
-      "favorite": true
-    },
-    {
-      "id": "8fb7",
-      "title": "Le Père Goriot",
-      "author": "Honoré de Balzac",
-      "year": 1835,
-      "favorite": true
-    },
-    {
-      "id": "e17d",
-      "title": "The Magic Mountain",
-      "author": "Thomas Mann",
-      "year": 1924,
+      "id": "4d3a",
+      "title": "The Golden Notebook",
+      "author": "Doris Lessing",
+      "year": 1962,
       "favorite": false
     },
     {
-      "id": "b3e4",
-      "title": "Ficciones",
-      "author": "Jorge Luis Borges",
-      "year": 1965,
+      "id": "5caa",
+      "title": "Poems",
+      "author": "Giacomo Leopardi",
+      "year": 1818,
       "favorite": false
     },
     {
-      "id": "67e3",
-      "title": "The Book of Disquiet",
-      "author": "Fernando Pessoa",
-      "year": 1928,
+      "id": "b301",
+      "title": "Jacques the Fatalist",
+      "author": "Denis Diderot",
+      "year": 1796,
       "favorite": false
     },
     {
-      "id": "916c",
-      "title": "Nineteen Eighty-Four",
-      "author": "George Orwell",
-      "year": 1949,
+      "id": "144a",
+      "title": "Poems",
+      "author": "Paul Celan",
+      "year": 1952,
       "favorite": false
     },
     {
-      "id": "9d99",
-      "title": "Sentimental Education",
-      "author": "Gustave Flaubert",
-      "year": 1869,
-      "favorite": false
-    },
-    {
-      "id": "71f8",
-      "title": "Middlemarch",
-      "author": "George Eliot",
-      "year": 1871,
+      "id": "5912",
+      "title": "To the Lighthouse",
+      "author": "Virginia Woolf",
+      "year": 1927,
       "favorite": false
     }
   ],
